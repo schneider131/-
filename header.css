@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(245, 247, 251, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(13, 27, 61, 0.05);
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.site-header__brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+}
+
+.site-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav__list a {
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+.site-nav__list a:hover {
+    color: var(--ink);
+}
+
+.site-nav__list__cta {
+    margin-left: 12px;
+}
+
+.nav-toggle {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(13, 27, 61, 0.15);
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-14px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.nav-toggle span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.site-header__brand:hover .nav-toggle {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.site-nav__cta .btn.btn--small {
+    color: #fff;
+}

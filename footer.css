@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.site-footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.site-footer__links {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.site-footer__links a {
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+.site-footer__links a:hover {
+    color: var(--ink);
+}

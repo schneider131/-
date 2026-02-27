@@ -1,0 +1,124 @@
+:root{
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --accent: #77db6a;
+    --accent-dark: #97b5a2;
+    --ink: #0d1b3d;
+    --ink-soft: #257542;
+    --muted: #6b7280;
+    --border: rgba(13, 27, 61, 0.08);
+    --shadow: 0 25px 60px -30px rgba(20, 35, 70, 0.45);
+    --max: 1120px;
+    --radius: 18px;
+    --gap: 18px;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-dark);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.btn{
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn.btn--small,
+.btn--small {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background: var(--accent-dark);
+    color: #fff;
+}
+ 
+.btn--ghost {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 8px 18px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn--ghost:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent-dark);
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(33, 82, 255, 0.1);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 1rem;
+    max-width: 260px;
+    white-space: normal;
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
